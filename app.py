@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, flash
 from flask_mail import Mail, Message
 from dotenv import load_dotenv
 import os
+load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
@@ -45,10 +46,8 @@ def contact():
                 Message:
                 {message}
                 """
-        with mail.connect() as conn:
-            conn.send(msg)
-
         try:
+            mail.send(msg)  # Directly send email using Flask-Mail
             flash("Your message has been sent successfully!", "success")
         except Exception as e:
             flash("Error sending message. Please try again later.", "danger")
