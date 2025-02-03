@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="static/images/portfolio (1).png" type="image/png" sizes="512x512">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"/>
+
+</head>
+<body>
+<div class="loader">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>
+    <header class="header">
+      <a href="#home" class="logo">Port<span>folio</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Greetings, <span>Developers! </span></h1>
+            <h3>I'm an <span>AI/ML Engineer</span></h3>
+            <p>Welcome to my portfolio! Here, you'll find details about the projects I've worked upon and the experience I've gained.
+               I built this website as a modern way to showcase my skills and projects, because why not?
+                While submitting a traditional resume is still effective, we should embrace technology and fully utilize it to stand out.
+                I wanted to go beyond the limits and leverage modern web page technologies to tell my story in a more engaging
+                and interactive way.
+            </p>
+                <div class="social-media-icons">
+                    <a href="https://github.com/roy1723" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sahil-banerjee-223825226" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_shlbnrj_" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-instagram-alt"></i>
+<!--                        <a href="#" onclick="showunavailablemessage()">-->
+<!--                            <i class="bx bxl-twitter"></i>-->
+<!--                        </a>-->
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <!-- <a href="#" class="btn">Hire</a> -->
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+        </div>
+        <div class="home-image">
+            <img src="{{ url_for('static', filename='images/test.jpg') }}" alt="Test Image">
+
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='images/me.jpeg') }}" alt="My Image">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>As for me, My name is Sahil Banerjee currently an undergrad in Bachelor of Technology
+                in <span>Artificial Intelligence and Data Science</span>. Throughout my life, I am deeply fascinated by the world of
+            technologies and their way of making life easier and much simpler. This hunger for technologies has driven
+                me to explore various fields within AI, from <span>machine learning</span> to <span>computer vision</span>, and has shaped my academic
+            and professional interests.</p>
+            <p>One of the defining moments in my journey so far was when I participated in a <span>Hackathon</span>
+            which was a part of IIC(Institute of Innovation Cell). As a <span>team leader</span> and along with my talented teammates we bagged <span>first
+                place</span> for our innovative project in the category of wellness and fitness industry.</p>
+            <p>As I dive deeper into the world <span>Artificial Intelligence and Data Science</span>, I am excited to apply the knowledge and skills
+            I have gained to real-world objects. I look forward to expanding my expertise, collaborating with like-minded individuals,
+                and creating innovative solutions that have a positive impact on society.</p>
+            <a href="https://www.linkedin.com/in/sahil-banerjee-223825226" target="_blank" rel="noopener noreferrer" class="btn">Read More</a>
+            <a href="https://drive.google.com/file/d/1bVORWJLTB6oZBsFPNL3frFrSZPYvPD-V/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn">Resume</a>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <!-- <h2 class="heading">My <span>Experience</span></h2> -->
+        <div class="timeline-wrapper">
+            <div class="timeline-row">
+                <div class="timeline-col">
+                    <h2 class="bag">
+                        <span><i class='bx bxs-briefcase-alt-2'></i></span>
+                        Experience
+                    </h2>
+                    <div class="timeline-box">
+                        <div class="content-box">
+                            <div class="date">
+                                <i class='bx bxs-calendar'></i>
+                                September 2024 - November 2024
+                            </div>
+                            <h3>Mediapipe Engineer Intern | The Tann Mann Gaadi, Bengaluru</h3>
+                            <p>The <span>Tann Mann Foundation</span> is a non-profit organization. Worked on computer vision projects
+                                using <span>Mediapipe and Opencv</span> to develop AI-powered solutions for pose estimation and movement
+                                analysis. Collaborated with a global team of data scientists to optimize image processing algorithms
+                                for real world applications.</p>
+                                <p>Skills: <span>Computer Vision | Machine Learning | Python | AI Development</span></p>
+                                <p><a href="https://www.thetannmanngaadi.org/" target="_blank" rel="noopener noreferrer"><span>Company's Website</span></a></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <div class="project_info">
+                    <i class='bx bx-dumbbell'></i>
+                    <h1>Smart Fitness Tracker</h1>
+                    <p>This project is the most extensive project I have worked upon with my friends.
+                    It uses the concept of computer vision to track human body and help them achieve their
+                    fitness goals at ease. I was also honoured, as this project was featured in one of the
+                    renowned newspapers of rajasthan which is Rajasthan Patrika. Read more about this project
+                        <a href="https://www.catchnews.com/science-technology/ai-enters-gym-training-students-create-smart-fitness-tracker-253498.html"
+                        target="_blank" rel="noopener noreferrer">here</a>.</p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project_info">
+                    <i class='bx bx-body' ></i>
+                    <h1>Human Body Measurement</h1>
+                    <p>Developed an AI-powered contactless body measurement system using MediaPipe and computer vision to estimate clothing sizes accurately from images and videos.
+                        The system captures body dimensions, including shoulder width, chest, waist, and length, by analyzing front, side, and back views through mobile and desktop cameras.
+                        Optimized algorithms ensure precise size recommendations, eliminating the need for physical measurements.
+                        </p>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project_info">
+                    <i class='bx bxs-chat' ></i>
+                    <h1>Chat-Bot</h1>
+                    <p>Developed an AI-powered voice assistant using OpenAI’s Whisper AI for speech-to-text and text-to-speech, enabling fashion store managers to interact with complex datasets through natural voice commands.
+                        The system processed sales, inventory, and purchase data in Excel, identifying trends like sales seasonality and inventory turnover with Python (Pandas, NumPy). Created visualizations with Matplotlib and Plotly to enhance data interpretation.
+                        </p>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project_info">
+                    <i class='bx bxl-github'></i>
+                    <h1>More on <a href="https://github.com/roy1723" target="_blank" rel="noopener noreferrer">GitHub Repo.</a></h1>
+                    <p>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span> Me</span></h2>
+        <form action="/submit-form" method="post">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" name="phone">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="social-media-icons">
+            <a href="https://github.com/roy1723" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sahil-banerjee-223825226" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="https://www.instagram.com/_shlbnrj_" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-instagram-alt"></i>
+<!--                <a href="#" onclick="showunavailablemessage()">-->
+<!--                    <i class="bx bxl-twitter"></i>-->
+<!--                </a>-->
+            </a>
+        </div>
+        <ul class="list">
+           <li>
+            <a href="#home">Home</a>
+           </li>
+           <li>
+            <a href="#projects">Projects</a>
+           </li>
+           <li>
+            <a href="#contact">Contact</a>
+           </li>
+        </ul>
+        <p class="copyright">
+            © 2025 | Sahil Banerjee | All Rights Reserved
+        </p>
+    </footer>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function showunavailablemessage() {
+            alert("Don't have a twitter account yet:(");
+        }
+    </script>
+    <script>
+    setTimeout(function() {
+        const flashMessages = document.querySelector('.flash-messages');
+        if (flashMessages) {
+            flashMessages.style.display = 'none';
+        }
+    }, 5000);  // Hide after 5 seconds
+</script>
+
+
+</body>
+</html>

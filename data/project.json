@@ -1,0 +1,14 @@
+[
+    {
+        "title": "AI Chatbot",
+        "description": "Built an AI-powered chatbot using OpenAI Whisper.",
+        "tech": ["Python", "Flask", "Streamlit"],
+        "link": "https://github.com/sahil/chatbot"
+    },
+    {
+        "title": "Body Measurement Scanner",
+        "description": "Developed a real-time body measurement scanner using MediaPipe.",
+        "tech": ["OpenCV", "MediaPipe", "Streamlit"],
+        "link": "https://github.com/sahil/body-measurement"
+    }
+]

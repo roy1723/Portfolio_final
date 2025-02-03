@@ -1,0 +1,14 @@
+[
+    {
+        "company": "The Tann Mann Gaudí",
+        "role": "MediaPipe Engineer (Intern)",
+        "duration": "Sept 2024 - Present",
+        "description": "Worked on AI models for human body posture detection."
+    },
+    {
+        "company": "Debuggers Club",
+        "role": "Hackathon Winner",
+        "duration": "Oct 2024",
+        "description": "Developed a gym posture tracking AI and won first place."
+    }
+]

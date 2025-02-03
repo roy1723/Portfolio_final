@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<section class="p-10">
+    <h2 class="text-3xl font-bold text-center">Work Experience</h2>
+    <div class="mt-6">
+        {% for exp in experience %}
+        <div class="p-4 border-b border-gray-500">
+            <h3 class="text-xl font-semibold">{{ exp.role }}</h3>
+            <p class="text-gray-400">{{ exp.company }} - {{ exp.duration }}</p>
+            <p>{{ exp.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
