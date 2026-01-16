@@ -186,23 +186,26 @@
     </section>
     <section class="contact" id="contact">
         <h2 class="heading">Contact<span> Me</span></h2>
-        <form action="/submit-form" method="post">
+        <form id="contactForm" method="POST">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+        
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" name="name">
-                    <input type="email" placeholder="Email" name="email">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number" name="phone">
-                    <input type="text" placeholder="Subject" name="subject">
+                    <input type="number" placeholder="Phone Number" name="phone" required>
+                    <input type="text" placeholder="Subject" name="subject" required>
                 </div>
             </div>
+        
             <div class="input-group-2">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
-
+                <textarea name="message" cols="30" rows="10" placeholder="Your message..." required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
+
     </section>
     <footer class="footer">
         <div class="social-media-icons">
